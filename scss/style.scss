@@ -1,14 +1,38 @@
 // COMPONENTS
 
+@import "../components/header.scss";
+@import "../components/bonanza.scss";
+@import "../components/descr.scss";
+@import "../components/table.scss";
+@import "../components/keys.scss";
+@import "../components/faq.scss";
+@import "../components/popup.scss";
+@import "../components/footer.scss";
+
 // MEDIA QUERIES COMPONENTS
+
+@import "../components/media-queries/media-header.scss";
+@import "../components/media-queries/media-bonanza.scss";
+@import "../components/media-queries/media-descr.scss";
+@import "../components/media-queries/media-table.scss";
+@import "../components/media-queries/media-keys.scss";
+@import "../components/media-queries/media-faq.scss";
+@import "../components/media-queries/media-footer.scss";
 
 // MIXINS
 @import "./mixins/mixins";
 
 // VARIABLES
-@import "./scss/variables/variables";
+@import "./variables/variables";
+
+// ANIMATIONS
+@import "./animations/links-hover.scss";
+
+// INNER COMP
+@import "./inner_comp/button.scss";
 
 // FONTS
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 // HTML
 
@@ -17,9 +41,33 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  background-color: #f8f8f8;
+}
+
+body.freeze {
+  overflow: hidden;
+}
+
+span,
+a,
+img {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  width: 100%;
+}
+
 // CONTAINER
 
 .container {
   max-width: 132rem;
+  width: 100%;
   margin: 0 auto;
 }

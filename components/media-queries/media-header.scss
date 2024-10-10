@@ -1,0 +1,78 @@
+@import "../../scss/variables/variables";
+@import "../../scss/mixins/mixins";
+
+.header_wrapper-mobile {
+  display: none;
+}
+.nav_list-mobile {
+  display: none;
+}
+
+@media (max-width: $xxl) {
+  .header {
+    &_wrapper {
+      padding: 0rem 1.2rem;
+    }
+  }
+}
+@media (max-width: $md) {
+  .header {
+    &_wrapper {
+      display: none;
+      &-mobile {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        display: flex;
+        padding: 0rem 1.2rem;
+      }
+    }
+  }
+  .mobile_menu-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    width: 4.8rem;
+    height: 4.8rem;
+  }
+  .nav_list-mobile {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    transition: all 0.4s ease-in-out;
+    transform: translateX(-100%);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 3rem;
+    background-color: $white;
+    max-width: 60%;
+    width: 100%;
+    height: 100dvh;
+  }
+  .nav_link-mobile {
+    color: $black;
+    @include nav-text-black;
+  }
+  .nav-mobile-overlay {
+    display: none;
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+  }
+}
+
+.nav_list-mobile.active {
+  transform: translateX(0%);
+  z-index: 3;
+  display: flex;
+}
+.nav-mobile-overlay.active {
+  display: block;
+  z-index: 2;
+}

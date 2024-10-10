@@ -1,0 +1,27 @@
+@mixin btn {
+  background-color: $primary;
+  transition: all 0.4s ease-in-out;
+  padding: 1rem 2rem;
+  border-radius: 0.8rem;
+  border: none;
+  cursor: pointer;
+  @include nav-text;
+  &:hover {
+    background-color: $btn-hov;
+  }
+}
+@mixin btn-bonus {
+  background-color: $bonus;
+  transition: all 0.4s ease-in-out;
+  padding: 1rem 2rem;
+  border-radius: 3.2rem;
+  border: none;
+  cursor: pointer;
+  max-width: 30rem;
+  width: 100%;
+  margin: 0 auto;
+  @include nav-text;
+  &:hover {
+    background-color: $bonus-hov;
+  }
+}

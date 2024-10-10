@@ -1,0 +1,35 @@
+@import "../../scss/variables/variables";
+@import "../../scss/mixins/mixins";
+
+@media (max-width: $xxl) {
+  .footer {
+    &_content {
+      margin: 0rem 1.2rem;
+    }
+  }
+}
+
+@media (max-width: 1040px) {
+  .footer {
+    &_logo,
+    &_wrapper {
+      flex-direction: column;
+      justify-content: center;
+      gap: 2rem;
+    }
+  }
+}
+
+@media (max-width: 845px) {
+  .footer {
+    &_rights {
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+      text-align: center;
+    }
+    &_partners {
+      flex-wrap: wrap;
+    }
+  }
+}

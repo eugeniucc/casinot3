@@ -1,0 +1,50 @@
+@import "../scss/variables/variables";
+@import "../scss/mixins/mixins";
+@import "../scss/animations/links-hover.scss";
+
+.descr {
+  margin-bottom: 6rem;
+  &_wrapper {
+    padding: 4rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 0.8rem;
+    cursor: pointer;
+  }
+  &_btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    width: 4.8rem;
+    height: 4.8rem;
+    transition: all 0.4s ease-in-out;
+  }
+  &_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &_list {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.4s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    &-link {
+      display: flex;
+      gap: 1rem;
+      @include main-links;
+      @include links-hover;
+    }
+  }
+  &_title {
+    @include main-links;
+    @include links-hover;
+  }
+}
+.descr_list.visible {
+  max-height: 50rem;
+}
+.descr_btn.rotate {
+  transform: rotate(180deg);
+}

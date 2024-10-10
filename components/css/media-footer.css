@@ -1,0 +1,23 @@
+@media (max-width: 1400px) {
+  .footer_content {
+    margin: 0rem 1.2rem;
+  }
+}
+@media (max-width: 1040px) {
+  .footer_logo, .footer_wrapper {
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+  }
+}
+@media (max-width: 845px) {
+  .footer_rights {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    text-align: center;
+  }
+  .footer_partners {
+    flex-wrap: wrap;
+  }
+}/*# sourceMappingURL=media-footer.css.map */

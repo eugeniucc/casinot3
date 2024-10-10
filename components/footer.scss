@@ -1,0 +1,51 @@
+@import "../scss/variables/variables";
+@import "../scss/mixins/mixins";
+@import "../scss/animations/links-hover.scss";
+
+.footer {
+  background-color: $header;
+  padding: 2rem 0rem;
+  &_link {
+    max-width: 20rem;
+    width: 100%;
+  }
+  &_content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  &_partners {
+    display: flex;
+    gap: 4rem;
+    &_svg {
+      width: 4rem;
+      height: 4rem;
+    }
+  }
+  &_logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  &_copyrights {
+    text-align: center;
+    &-text {
+      @include footer-rights;
+    }
+  }
+  &_menu,
+  &_rights {
+    display: flex;
+    gap: 2rem;
+    &-links {
+      @include footer-text;
+      @include links-hover;
+    }
+  }
+  &_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

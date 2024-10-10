@@ -1,0 +1,27 @@
+@import "../scss/variables/variables";
+@import "../scss/mixins/mixins";
+
+.keys {
+  margin-bottom: 6rem;
+  &_wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+  }
+  &_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6rem;
+    &-img {
+      height: 40rem;
+      border-radius: 3.2rem;
+    }
+    &-title {
+      @include h2-black;
+    }
+    &-text {
+      @include nav-text-black;
+    }
+  }
+}

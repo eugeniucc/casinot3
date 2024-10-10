@@ -1,0 +1,50 @@
+@import "../scss/variables/variables";
+@import "../scss/mixins/mixins";
+
+.faq {
+  margin-bottom: 6rem;
+  &_title {
+    @include h2-black;
+    margin-bottom: 6rem;
+  }
+  &_wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+  }
+  &_box {
+    cursor: pointer;
+    background-color: $white;
+    padding: 2rem;
+    border-radius: 3.2rem;
+    &-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &-btn {
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      width: 6.4rem;
+      height: 6.4rem;
+      transition: all 0.4s ease-in-out;
+    }
+    &-title {
+      @include h3-black;
+    }
+    &-res {
+      max-height: 0;
+      overflow: hidden;
+      transition: all 0.4s ease-in-out;
+      @include nav-text-black;
+    }
+  }
+}
+
+.faq_box-res.active {
+  max-height: 10rem;
+}
+.faq_box-btn.rotate {
+  transform: rotate(180deg);
+}

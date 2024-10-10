@@ -1,0 +1,43 @@
+@import "../scss/variables/variables";
+@import "../scss/mixins/mixins";
+@import "../scss/inner_comp/button.scss";
+
+.bonanza {
+  background: rgb(131, 58, 180);
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 1) 100%,
+    rgba(252, 176, 69, 1) 100%
+  );
+  margin-bottom: 6rem;
+  &_title {
+    @include h1;
+  }
+  &_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem;
+  }
+  &_img {
+    max-width: 100%;
+    width: 50%;
+  }
+  &_search {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+  &_descr {
+    @include nav-text;
+  }
+  &_try {
+    display: flex;
+    gap: 2rem;
+  }
+  &_register,
+  &_demo {
+    @include btn;
+  }
+}

@@ -1,0 +1,48 @@
+@import "../scss/variables/variables";
+@import "../scss/mixins/mixins";
+@import "../scss/animations/links-hover.scss";
+@import "../scss/inner_comp/button.scss";
+
+.table {
+  margin-bottom: 6rem;
+  &_img {
+    height: 40rem;
+    border-radius: 3.2rem;
+  }
+  &_wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+  }
+  &_tag {
+    max-width: 100%;
+    width: 100%;
+    &-head {
+      @include main-links;
+      text-align: left;
+      padding: 2rem;
+      background-color: $primary;
+      border: 0.1rem solid $primary;
+    }
+    &-column {
+      @include table-tag-column;
+      padding: 2rem;
+      border: 0.1rem solid $primary;
+    }
+  }
+  &_list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 3rem;
+    border-radius: 2.4rem;
+    background-color: $primary;
+    @include nav-text;
+  }
+  &_bonus {
+    @include btn-bonus;
+  }
+  &_text {
+    @include nav-text-black;
+  }
+}

@@ -1,0 +1,20 @@
+@import "../../scss/variables/variables";
+@import "../../scss/mixins/mixins";
+
+@media (max-width: $xxl) {
+  .descr {
+    &_wrapper {
+      margin: 0rem 1.2rem;
+    }
+  }
+}
+@media (max-width: $md) {
+  .descr {
+    &_wrapper {
+      padding: 2rem;
+    }
+    &_title {
+      margin-bottom: 2rem;
+    }
+  }
+}

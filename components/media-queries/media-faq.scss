@@ -1,0 +1,25 @@
+@import "../../scss/variables/variables";
+@import "../../scss/mixins/mixins";
+
+@media (max-width: $xxl) {
+  .faq {
+    &_title {
+      text-align: center;
+    }
+    &_wrapper {
+      margin: 0rem 1.2rem;
+    }
+  }
+}
+@media (max-width: 960px) {
+  .faq_box-title {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+}
+@media (max-width: $md) {
+  .faq_box-title {
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+  }
+}

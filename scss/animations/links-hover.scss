@@ -1,0 +1,6 @@
+@mixin links-hover {
+  transition: all 0.4s ease-in-out;
+  &:hover {
+    color: #e56d91;
+  }
+}

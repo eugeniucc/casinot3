@@ -1,0 +1,19 @@
+@import "../../scss/variables/variables";
+@import "../../scss/mixins/mixins";
+
+@media (max-width: $xxl) {
+  .bonanza {
+    &_content {
+      padding: 0rem 1.2rem;
+    }
+  }
+}
+@media (max-width: $xl) {
+  .bonanza {
+    &_content {
+      flex-direction: column;
+      padding: 2rem 1.2rem 0rem 1.2rem;
+      gap: 2rem;
+    }
+  }
+}

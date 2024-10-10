@@ -1,0 +1,91 @@
+@mixin nav-text {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 2rem;
+  font-size: 1.8rem;
+  color: $white;
+}
+@mixin nav-text-black {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 2rem;
+  font-size: 1.8rem;
+  color: $black;
+}
+
+@mixin h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 5rem;
+  font-size: 4.2rem;
+  color: $white;
+}
+@mixin h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 5rem;
+  font-size: 3.6rem;
+  color: $white;
+}
+@mixin h2-black {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 5rem;
+  font-size: 3.6rem;
+  color: $black;
+}
+@mixin h3-black {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 5rem;
+  font-size: 2.6rem;
+  color: $black;
+}
+@mixin main-links {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 2rem;
+  font-size: 2rem;
+  color: $header;
+}
+@mixin table-tag-column {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 2rem;
+  font-size: 1.6rem;
+  color: $header;
+}
+
+@mixin footer-text {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 2rem;
+  font-size: 1.6rem;
+  color: $white;
+}
+@mixin btn {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 2rem;
+  font-size: 1.8rem;
+  color: $white;
+}
+
+@mixin footer-rights {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 2rem;
+  font-size: 1.2rem;
+  color: #c6c6c6;
+}

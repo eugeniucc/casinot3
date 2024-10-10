@@ -1,0 +1,57 @@
+.bonanza {
+  background: rgb(131, 58, 180);
+  background: linear-gradient(90deg, rgb(131, 58, 180) 0%, rgb(253, 29, 29) 100%, rgb(252, 176, 69) 100%);
+  margin-bottom: 6rem;
+}
+.bonanza_title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 5rem;
+  font-size: 4.2rem;
+  color: #fff;
+}
+.bonanza_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4rem;
+}
+.bonanza_img {
+  max-width: 100%;
+  width: 50%;
+}
+.bonanza_search {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.bonanza_descr {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 2rem;
+  font-size: 1.8rem;
+  color: #fff;
+}
+.bonanza_try {
+  display: flex;
+  gap: 2rem;
+}
+.bonanza_register, .bonanza_demo {
+  background-color: #e56d91;
+  transition: all 0.4s ease-in-out;
+  padding: 1rem 2rem;
+  border-radius: 0.8rem;
+  border: none;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 2rem;
+  font-size: 1.8rem;
+  color: #fff;
+}
+.bonanza_register:hover, .bonanza_demo:hover {
+  background-color: #ce6282;
+}/*# sourceMappingURL=bonanza.css.map */

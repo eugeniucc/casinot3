@@ -1,0 +1,12 @@
+@media (max-width: 1400px) {
+  .bonanza_content {
+    padding: 0rem 1.2rem;
+  }
+}
+@media (max-width: 1200px) {
+  .bonanza_content {
+    flex-direction: column;
+    padding: 2rem 1.2rem 0rem 1.2rem;
+    gap: 2rem;
+  }
+}/*# sourceMappingURL=media-bonanza.css.map */
