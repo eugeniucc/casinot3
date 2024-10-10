@@ -1,0 +1,20 @@
+@import "../../scss/variables/variables";
+@import "../../scss/mixins/mixins";
+
+@media (max-width: $xxl) {
+  .popup {
+    &_wrapper {
+      flex-direction: column;
+      padding: 1rem;
+      gap: 2rem;
+    }
+  }
+}
+@media (max-width: 810px) {
+  .popup {
+    &_title {
+      font-size: 2rem;
+      text-align: center;
+    }
+  }
+}
