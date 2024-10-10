@@ -1,0 +1,25 @@
+// COMPONENTS
+
+// MEDIA QUERIES COMPONENTS
+
+// MIXINS
+@import "./mixins/mixins";
+
+// VARIABLES
+@import "./scss/variables/variables";
+
+// FONTS
+
+// HTML
+
+html {
+  font-size: $base-font-size;
+  scroll-behavior: smooth;
+}
+
+// CONTAINER
+
+.container {
+  max-width: 132rem;
+  margin: 0 auto;
+}
