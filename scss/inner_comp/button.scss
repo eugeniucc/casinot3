@@ -21,6 +21,7 @@
   width: 100%;
   margin: 0 auto;
   @include nav-text;
+  text-align: center;
   &:hover {
     background-color: $bonus-hov;
   }
